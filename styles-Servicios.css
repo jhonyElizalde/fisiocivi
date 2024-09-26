@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+.header-container {
+    background-color: #0056ff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin: 5px 0 0 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0056ff;;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li button {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    background-color: #0042cc;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+nav ul li a:hover,
+nav ul li button:hover {
+    background-color: #003399;
+}
+
+/* Services Page Styles */
+.services-title-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.services-title-container h2 {
+    color: #0042cc; /* Azul para el título de servicios */
+    font-size: 2em;
+}
+        /* Ajustes en el contenedor de servicios */
+        .services-container {
+            padding: 20px 10px; 
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-item-wrapper {
+            display: flex;
+            align-items: flex-start; 
+            margin: 10px 0; /* Reduce el margen superior para mover el contenedor más arriba */
+            width: 100%;
+            padding-right: 100px; /* Aumenta el relleno derecho para dar espacio  a la imagen */
+            box-sizing: border-box; 
+        }
+
+        /* Ajustar el tamaño y posición del cuadro de texto */
+        .service-item {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            flex: 1;
+            margin-left: 40px; 
+            margin-top: 0; 
+            max-width: 600px; 
+        }
+
+        .service-image {
+            max-width: 300px; /* Tamaño máximo general para las imágenes */
+            height: auto; 
+            border-radius: 5px;
+            margin-left: auto; /* Mueve la imagen hacia la derecha del contenedor flex */
+        }
+
+        /* Para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .service-item-wrapper {
+                flex-direction: column; /* Las imágenes estarán sobre el texto en pantallas pequeñas */
+                align-items: center;
+                margin: 10px 0; /* Reduce el margen superior para pantallas pequeñas */
+                padding-right: 10px; /* Ajusta el relleno derecho en pantallas pequeñas */
+            }
+
+            .service-item {
+                margin-left: 0; /* Elimina el margen izquierdo cuando el texto está abajo */
+                padding: 15px;
+                max-width: 100%; /* Ajusta el ancho del cuadro de texto en pantallas pequeñas */
+            }
+
+            .service-image {
+                max-width: 100%; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+                margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
+                margin-bottom: 10px; /* Añade margen inferior entre la imagen y el texto */
+            }
+        }
+/* Footer Styles */
+footer {
+    background-color: #0056ff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+/* Header Styles */
+.header-container {
+    background-color: #0056ff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin: 5px 0 0 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0056ff;
+    margin: 0;
+    position: relative; 
+}
+
+nav ul li {
+    margin: 0 10px;
+    position: relative; 
+}
+
+nav ul li a,
+nav ul li button {
+    color: #fff;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    background-color: #0042cc;
+    border: none; /* Elimina los bordes predeterminados */
+    cursor: pointer;
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+nav ul li a:hover,
+nav ul li button:hover {
+    background-color: #003399;
+}
+
+
+/* About Page Styles */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    flex: 1; 
+}
+
+/* Contenedor principal de la sección "Sobre Nosotros" */
+.about-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.about-logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Sección de Misión y Visión */
+.about-section {
+    margin: 20px 0;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #0042cc; /* Azul para los títulos */
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.about-section p {
+    line-height: 1.6;
+    text-align: justify;
+    color: #666; /* Gris oscuro para el texto */
+    margin: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0056ff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative; 
+    width: 100%;
+}

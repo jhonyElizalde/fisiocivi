@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro - FISIOCIVI</title>
+    <link rel="stylesheet" href="styles-Foro.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="title-container">
+                <h1>FISIOCIVI</h1>
+                <p class="subtitle">Foro de Sugerencias y Comentarios</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="servicios.html">Servicios</a>
+                </li>
+                <li><a href="Sobre_Nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+                <li><a href="foro.html">Foro</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="forum-container">
+            <h2>Bienvenido al Foro</h2>
+            <p>Déjanos tus sugerencias y comentarios. Queremos saber tu opinión para mejorar nuestros servicios.</p>
+            
+            <div class="comment-form">
+                <h3>Escribe un Comentario</h3>
+                <form id="comment-form">
+                    <textarea id="comment-text" placeholder="Escribe tu comentario aquí..." required></textarea>
+                    <input type="text" id="user-name" placeholder="Tu nombre" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <div class="comments-section">
+                <h3>Comentarios Recientes</h3>
+                <div id="comments-list">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FISIOCIVI. Todos los derechos reservados.</p>
+    </footer>
+
+   
+</body>
+</html>
